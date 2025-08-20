@@ -1,0 +1,16 @@
+{
+  "name": "worker",
+  "version": "0.1.0",
+  "main": "dist/main.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/main.js"
+  },
+  "dependencies": {
+    "bullmq": "^4.7.0",
+    "ioredis": "^5.3.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.4.2"
+  }
+}
