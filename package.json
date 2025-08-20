@@ -1,0 +1,13 @@
+{
+  "name": "sitepulse-monorepo",
+  "private": true,
+  "workspaces": ["apps/*", "packages/*"],
+  "scripts": {
+    "build": "npm run build -w apps/web && npm run build -w apps/api && npm run build -w apps/worker",
+    "test": "vitest"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3",
+    "vitest": "^1.1.0"
+  }
+}
